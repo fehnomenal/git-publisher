@@ -11,6 +11,8 @@ Each of those commits will have the "source" commit and commit of the previously
 
 // TODO: Example with image of git log.
 
+> In the meantime look at this repo. This shit publishes itself.
+
 ## Installation
 
 Choose the one for your package manager.

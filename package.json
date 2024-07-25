@@ -8,7 +8,8 @@
   "scripts": {
     "build": "rm -rf dist && bun build --target=node --outdir=dist --splitting src/index.ts",
     "changeset": "changeset",
-    "version": "changeset version"
+    "version": "changeset version",
+    "publish": "bun run build && node dist/index.js"
   },
   "devDependencies": {
     "@changesets/cli": "2.27.7",
