@@ -1,5 +1,11 @@
 # @fehnomenal/git-releaser
 
+## 1.0.2
+
+### Patch Changes
+
+- d94e387: Prevent shell expanding the tag listing pattern
+
 ## 1.0.1
 
 ### Patch Changes
