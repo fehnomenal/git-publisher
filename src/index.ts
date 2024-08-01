@@ -2,6 +2,7 @@
 
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { cleanScriptsIfNecessary } from './clean-scripts.ts';
 import { TAG_PREFIX, cwd, encoding } from './config.ts';
 import { exec } from './exec.ts';
 import { getParentTagHash } from './parent-tag.ts';
@@ -28,11 +29,10 @@ if (!version) {
 }
 
 // Remove the prepare script if present. The file will be reset later to its original state.
-if (pkgJson.scripts?.prepare) {
+if (cleanScriptsIfNecessary(pkgJson.scripts)) {
   const indent = pkgJsonRaw.match(/\n(\s+)/)?.[1] ?? '  ';
   const trailingNewLine = pkgJsonRaw.endsWith('\n') ? '\n' : '';
 
-  delete pkgJson.scripts.prepare;
   writeFileSync(pkgJsonPath, JSON.stringify(pkgJson, null, indent) + trailingNewLine);
 }
 
