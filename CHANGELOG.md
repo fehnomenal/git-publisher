@@ -1,5 +1,11 @@
 # @fehnomenal/git-releaser
 
+## 1.0.3
+
+### Patch Changes
+
+- 4417fce: Remove lifecycle scripts before packaging
+
 ## 1.0.2
 
 ### Patch Changes

@@ -18,19 +18,19 @@ Each of those commits will have the "source" commit and commit of the previously
 Choose the one for your package manager.
 
 ```sh
-npm install -D 'github:fehnomenal/git-publisher#semver:v1.0.2'
+npm install -D 'github:fehnomenal/git-publisher#semver:v1.0.3'
 ```
 
 ```sh
-yarn install -D 'github:fehnomenal/git-publisher#semver:v1.0.2'
+yarn install -D 'github:fehnomenal/git-publisher#semver:v1.0.3'
 ```
 
 ```sh
-pnpm install -D 'github:fehnomenal/git-publisher#semver:v1.0.2'
+pnpm install -D 'github:fehnomenal/git-publisher#semver:v1.0.3'
 ```
 
 ```sh
-bun add -D 'github:fehnomenal/git-publisher#semver:v1.0.2'
+bun add -D 'github:fehnomenal/git-publisher#semver:v1.0.3'
 ```
 
 ## Usage
